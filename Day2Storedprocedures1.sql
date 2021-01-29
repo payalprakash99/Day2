@@ -1,6 +1,6 @@
 use assign_1
 go
-CREATE PROCEDURE USP_CreateProduct(@pname varchar(45))
+CREATE PROCEDURE USP_CreateProduct(@pname varchar(45),@cname varchar(45),@bname varchar(45))
 AS
 BEGIN
    SELECT product_id FROM ProductTab WHERE ProductTab.product_name=@pname
